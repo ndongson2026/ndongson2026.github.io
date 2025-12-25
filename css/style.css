@@ -167,3 +167,7 @@ p {
   min-width: 120px;       /* forces vertical alignment */
   color: #0b5ed7;
 }
+.phone,
+.whatsapp {
+  white-space: nowrap;
+}
