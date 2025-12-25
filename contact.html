@@ -12,6 +12,32 @@
 
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Contact page fixes -->
+  <style>
+    .contact-list {
+      margin-top: 20px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .contact-link {
+      white-space: nowrap;
+      text-decoration: none;
+      color: #0b5ed7;
+      font-weight: 500;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
@@ -36,10 +62,6 @@
 
     <!-- CONTACT DETAILS -->
     <div class="contact-list">
-      <div class="contact-item">
-        <strong>Phone:</strong>
-        <span>+237 677 441 880</span>
-      </div>
 
       <div class="contact-item">
         <strong>Email:</strong>
@@ -47,70 +69,53 @@
       </div>
 
       <div class="contact-item">
+        <strong>Phone:</strong>
+        <a href="tel:+237677441880" class="contact-link">
+          +237 677 441 880
+        </a>
+      </div>
+
+      <div class="contact-item">
         <strong>WhatsApp:</strong>
-        <span>+237 677 441 880</span>
+        <a href="https://wa.me/237677441880" class="contact-link">
+          +237 677 441 880
+        </a>
       </div>
 
       <div class="contact-item">
         <strong>Location:</strong>
         <span>Cameroon</span>
       </div>
+
     </div>
 
     <!-- CONTACT FORM -->
     <h3 style="margin-top:30px;">Send Us a Message</h3>
 
-    <form
-      action="https://formspree.io/f/mojagaob"
-      method="POST"
-    >
+    <form action="https://formspree.io/f/mojagaob" method="POST">
       <div style="display:flex; flex-direction:column; gap:15px;">
 
         <label>
           <strong>Your Name</strong><br>
-          <input
-            type="text"
-            name="name"
-            required
-            style="width:100%; padding:10px; margin-top:5px;"
-          >
+          <input type="text" name="name" required style="width:100%; padding:10px; margin-top:5px;">
         </label>
 
         <label>
           <strong>Your Email</strong><br>
-          <input
-            type="email"
-            name="email"
-            required
-            style="width:100%; padding:10px; margin-top:5px;"
-          >
+          <input type="email" name="email" required style="width:100%; padding:10px; margin-top:5px;">
         </label>
 
         <label>
           <strong>Subject</strong><br>
-          <input
-            type="text"
-            name="subject"
-            required
-            style="width:100%; padding:10px; margin-top:5px;"
-          >
+          <input type="text" name="subject" required style="width:100%; padding:10px; margin-top:5px;">
         </label>
 
         <label>
           <strong>Your Message</strong><br>
-          <textarea
-            name="message"
-            rows="5"
-            required
-            style="width:100%; padding:10px; margin-top:5px;"
-          ></textarea>
+          <textarea name="message" rows="5" required style="width:100%; padding:10px; margin-top:5px;"></textarea>
         </label>
 
-        <button
-          type="submit"
-          class="donate-btn"
-          style="align-self:flex-start;"
-        >
+        <button type="submit" class="donate-btn" style="align-self:flex-start;">
           Send Message
         </button>
 
