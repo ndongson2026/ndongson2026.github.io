@@ -142,3 +142,14 @@ body {
 .whatsapp-float:hover {
   background: #1ebe5d;
 }
+
+/* Content Frame (Card Layout) */
+.content section {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 900px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
