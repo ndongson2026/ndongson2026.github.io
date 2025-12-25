@@ -67,6 +67,7 @@ body {
   margin: 40px auto;
   max-width: 850px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  text-align: left; /* ✅ LEFT ALIGN CONTENT */
 }
 
 .content h2 {
@@ -74,9 +75,11 @@ body {
   margin-bottom: 15px;
 }
 
+/* ===== PARAGRAPHS ===== */
 p {
   margin-bottom: 18px;
-  text-align: justify;
+  text-align: left;      /* ✅ LEFT ALIGN TEXT */
+  line-height: 1.6;      /* ✅ BETTER READABILITY */
 }
 
 /* ===== GALLERY ===== */
@@ -103,6 +106,7 @@ p {
   padding: 12px;
   font-size: 14px;
   color: #555;
+  text-align: center; /* captions stay centered */
 }
 
 /* ===== FOOTER ===== */
