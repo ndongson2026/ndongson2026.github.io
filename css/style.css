@@ -185,28 +185,28 @@ p {
     max-width: 100px;
   }
 }
-/* ===== SCROLLING SLOGAN ===== */
+/* ===== SCROLLING SLOGAN (FIXED) ===== */
 .slogan-bar {
+  width: 100%;
   background: #0b5ed7;
   overflow: hidden;
-  white-space: nowrap;
-  padding: 10px 0;
 }
 
 .slogan-text {
   display: inline-block;
+  white-space: nowrap;
   padding-left: 100%;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  animation: scroll-slogan 18s linear infinite;
+  animation: slogan-scroll 20s linear infinite;
 }
 
-@keyframes scroll-slogan {
-  0% {
+@keyframes slogan-scroll {
+  from {
     transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-100%);
   }
 }
