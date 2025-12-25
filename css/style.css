@@ -148,3 +148,22 @@ p {
     padding: 20px;
   }
 }
+/* ===== CONTACT PAGE LAYOUT ===== */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;              /* space between items */
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+}
+
+.contact-item strong {
+  min-width: 120px;       /* forces vertical alignment */
+  color: #0b5ed7;
+}
