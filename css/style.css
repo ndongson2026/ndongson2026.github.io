@@ -23,6 +23,14 @@ body {
   padding: 50px 20px 30px;
 }
 
+/* ===== LOGO ===== */
+.site-logo {
+  display: block;
+  max-width: 120px;
+  height: auto;
+  margin: 0 auto 15px;
+}
+
 .site-header h1 {
   font-size: 34px;
 }
@@ -67,7 +75,7 @@ body {
   margin: 40px auto;
   max-width: 850px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  text-align: left; /* ✅ LEFT ALIGN CONTENT */
+  text-align: left;
 }
 
 .content h2 {
@@ -78,8 +86,8 @@ body {
 /* ===== PARAGRAPHS ===== */
 p {
   margin-bottom: 18px;
-  text-align: left;      /* ✅ LEFT ALIGN TEXT */
-  line-height: 1.6;      /* ✅ BETTER READABILITY */
+  text-align: left;
+  line-height: 1.6;
 }
 
 /* ===== GALLERY ===== */
@@ -106,7 +114,7 @@ p {
   padding: 12px;
   font-size: 14px;
   color: #555;
-  text-align: center; /* captions stay centered */
+  text-align: center;
 }
 
 /* ===== FOOTER ===== */
@@ -141,18 +149,11 @@ p {
   background: #1ebe5d;
 }
 
-/* ===== MOBILE FIX ===== */
-@media (max-width: 768px) {
-  .content section {
-    margin: 25px 10px;
-    padding: 20px;
-  }
-}
 /* ===== CONTACT PAGE LAYOUT ===== */
 .contact-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;              /* space between items */
+  gap: 15px;
   margin-top: 20px;
 }
 
@@ -164,10 +165,23 @@ p {
 }
 
 .contact-item strong {
-  min-width: 120px;       /* forces vertical alignment */
+  min-width: 120px;
   color: #0b5ed7;
 }
+
 .phone,
 .whatsapp {
   white-space: nowrap;
+}
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+  .content section {
+    margin: 25px 10px;
+    padding: 20px;
+  }
+
+  .site-logo {
+    max-width: 100px;
+  }
 }
